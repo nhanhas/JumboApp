@@ -1,0 +1,126 @@
+body{
+	background-image: url("http://thebrandaffair.eu/auchan/pet/recolha-dados/images/ap_pet_asset_fundo.png?crc=201912450"),  url("http://thebrandaffair.eu/auchan/pet/recolha-dados/images/ap_pet_asset_fundo.png?crc=201912450");
+	background-repeat: initial;
+    background-position: center; 
+}
+
+
+/* VIEW 1 */
+.logo-div{
+    margin: 70px auto;
+}
+
+.start-div{
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url("http://thebrandaffair.eu/auchan/pet/recolha-dados/images/sombra_1.png?crc=191514782") 30;
+}
+.form-start-btn{
+    letter-spacing: 9px;
+	width:650px;
+	background-color: #006837;
+	border-color: #006837;
+	color: white !important;
+	font-size: 26px;
+	font-weight: bold;
+    height: 100px;
+    border-radius: 20px;
+    margin: 50px auto;	
+}
+.form-start-btn:hover{
+	width:650px;
+	background-color: #006837;
+	border-color: #006837;
+	color: white;
+	font-size: 26px;
+	font-weight: bold;	
+}
+
+.config-div{
+	margin: 50px auto;
+}
+.config-p{
+    margin-top: 20px;
+    letter-spacing: 9px;
+	font-size: 21px;
+	color: white;
+	font-weight: bold;
+}
+
+/* VIEW 2 */
+.close-btn-form-2{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+.logo-div-2{
+    margin: 40px auto;
+}
+
+.form-div-2{
+	background-color: white;
+	border-radius: 20px;
+}
+
+.form-title-p{
+    margin: 70px auto 30px auto;
+	letter-spacing: 2px;
+    color: #006837;
+    font-size: 21px;
+    line-height: 25px;
+    font-weight: normal;
+}
+
+.form-fields{
+	border: 10px solid transparent;
+    padding: 15px;
+    border-image: url("http://thebrandaffair.eu/auchan/pet/recolha-dados/images/sombra_1.png?crc=191514782") 30;
+    border-bottom: none;
+}
+.form-labels{
+	color: #7F7F7F;
+    line-height: 20px;
+    
+    font-size: 17px;
+}
+
+.form-input-field{
+	border-radius: 10px;
+	height:40px;
+	margin-bottom: 15px;
+}
+.form-send-btn{
+    margin-bottom: 20px;	
+    letter-spacing: 9px;
+	width:250px;
+	background-color: #006837;
+	border-color: #006837;
+	color: white !important;
+	font-size: 20px;
+	font-weight: bold;
+    height: 80px;
+    border-radius: 20px;
+    	
+}
+
+.check-toogle{
+	height: 25px;
+    border-radius: 4px;
+    width: 25px;
+	border: 1px solid #c1c1c2;
+
+}
+
+/* VIEW 3 */
+.hint{
+	font-size: 22px;
+    margin: 50px auto;	
+}
+
+.error-msg{
+    color: #C1272D;
+    line-height: 26px;
+
+    font-size: 22px;
+}
+

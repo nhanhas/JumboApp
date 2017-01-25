@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <title>JUMBO</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!-- App CSS -->
+    <link href="css/form.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+
+
+ 
+
+
+</head>
+<body>
+
+    <div class="container" >
+
+
+
+
+      <!--<img id="u104_img" src="http://thebrandaffair.eu/auchan/pet/recolha-dados/images/ap_pet_asset_jumbo.png?crc=372621263" alt="" width="210" height="55">-->
+
+
+        <!-- View 1 -->
+        <div id="view1" class="text-center">
+
+            <!-- JUMBO logo -->
+            <div class="row">
+                <div class="col-xs-12 logo-div">
+                    <img id="u104_img" src="http://thebrandaffair.eu/auchan/pet/recolha-dados/images/ap_pet_asset_jumbo.png?crc=372621263" alt="" width="210" height="55">
+                </div>
+            </div>
+
+            <!-- Start Form -->
+            <div class="row">
+                <div class="col-xs-12 start-div">
+                    <button class="btn form-start-btn" type="button" onclick="startForm()">FORMULÁRIO</button>
+                </div>
+            </div>
+
+            <!-- Configs -->
+            <div class="row">
+                <div class="col-xs-12 config-div" onclick="configForm()">
+                    <img src="http://thebrandaffair.eu/auchan/pet/recolha-dados/images/ap_pet_asset_roda.png?crc=31356403" alt="" width="87" height="73">
+                    <P class="config-p">CONFIGURAÇÃO</P>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- View 2 -->
+        <div id="view2" class="text-center" style="display:none">
+
+            <!-- JUMBO logo -->
+            <div class="row">
+                <div class="col-xs-12 logo-div-2">
+                    <img id="u104_img" src="http://thebrandaffair.eu/auchan/pet/recolha-dados/images/ap_pet_asset_jumbo.png?crc=372621263" alt="" width="210" height="55">
+                </div>
+            </div>
+
+            <!-- Form Div - White one -->
+            <div class="row">
+                <div class="col-xs-12 form-div-2">
+
+                    <!-- close  -->
+                    <div class="close-btn-form-2" onclick="goHome()"><img src="http://thebrandaffair.eu/auchan/pet/recolha-dados/images/ap_pet_asset_close.png?crc=4089678254"></div>
+
+                    <p class="form-title-p">Sim, quero receber um convite para ser sócio do Jumbo Pet Club</p>
+
+                    <!-- form fields -->
+                    <div class="row form-fields text-left">
+                        <div class=" col-xs-offset-2 col-xs-8">
+                            <p class="form-labels">Nome:</p>
+                            <input id="nome" type="text" class="form-control form-input-field" aria-label="...">
+                        </div>
+                        <div class="col-xs-offset-2 col-xs-8">
+                            <p class="form-labels">Email:</p>
+                            <input id="email" type="text" class="form-control form-input-field" aria-label="...">
+                        </div>
+                        <div class="col-xs-offset-2 col-xs-8">
+                            <p class="form-labels">Telefone:</p>
+                            <input id="telefone" type="text" class="form-control form-input-field" aria-label="...">
+                        </div>
+                    </div>
+
+
+                    <!-- Authorization and ENVIAR -->
+                    <div class="row">
+
+                        <div class="col-xs-12 col-md-8">
+                            <div class="col-xs-2 text-right">
+                                <label class="check-toogle" onclick="acceptTerms()">
+                                    <img id="accepted-terms" style="margin-right: 3px; display:none" src="http://thebrandaffair.eu/auchan/pet/recolha-dados/images/ap_pet_asset_check.png?crc=3819118530"> 
+                                </label>
+                            </div>
+                            
+                            <div class="col-xs-10">
+                                <p class="text-left">Autorizo o tratamento dos meus dados pessoais para efeitos de  gestão de clientes e marketing por empresas da Auchan. Os dados pessoais aqui recolhidos serão tratados informaticamente com a finalidade de gestão de clientes e marketing e poderão vir a ser comunicados e utilizados por empresas da Auchan. Todos os Clientes da Auchan têm o direito de acesso, retificação, cancelamento e oposição à comunicação dos seus dados, odendo exercer esses direitos por correio electrónico para infojumbo@auchan.pt ou por escrito para Serviço Cliente - Travessa Teixeira Júnior, 1, 1300-553 Lisboa.</p>
+                            </div>
+                        </div>    
+                        <div class="col-xs-12 col-md-4">                        
+                            <button class="btn form-send-btn" type="button" onclick="sendForm()">ENVIAR</button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- View 3 -->
+        <div id="view3" style="display:none">
+
+            <!-- JUMBO logo -->
+            <div class="row  text-center">
+                <div class="col-xs-12 logo-div-2">
+                    <img id="u104_img" src="http://thebrandaffair.eu/auchan/pet/recolha-dados/images/ap_pet_asset_jumbo.png?crc=372621263" alt="" width="210" height="55">
+                </div>
+            </div>
+
+            <!-- Form Div - White one -->
+            <div class="row   text-center">
+                <div class="col-xs-12 form-div-2">
+
+                    <!-- close  -->
+                    <div class="close-btn-form-2" onclick="goHome()"><img src="http://thebrandaffair.eu/auchan/pet/recolha-dados/images/ap_pet_asset_close.png?crc=4089678254"></div>
+
+                    <p class="form-title-p">CONFIGURAÇÃO</p>
+
+
+
+                    <!-- form fields -->
+                    <div class="row form-fields text-center">
+
+                        <p class="form-labels hint text-center">Enviar dados</p>
+
+                        <div class="col-xs-12 col-md-offset-2 col-md-4 text-left">
+                            <p class="form-labels">Entre o período de:</p>
+                            <input id="data-from" type="text" class="form-control form-input-field" aria-label="...">
+                        </div>
+                        <div class="col-xs-12 col-md-4 text-left">
+                            <p class="form-labels">Até:</p>
+                            <input id="data-to" type="text" class="form-control form-input-field" aria-label="...">
+                        </div>
+                    </div>
+
+
+                    <!-- ENVIAR -->
+                    <div class="row">
+
+                        <div class="col-xs-4 col-xs-offset-4">                        
+                            <button class="btn form-send-btn" type="button" onclick="sendConfig()">ENVIAR</button>
+                        </div>
+
+                    </div>
+
+                    <div class="row text-center">
+
+                        <div class="col-xs-12"> 
+                            <p id="error" style="visibility:hidden" class="error-msg">O envio não foi efetuado. Por favor, verifique a ligação à internet.</p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+    </div><!-- /.container -->
+    
+
+
+
+<!-- Controller -->
+<script src="js/FormController.js"></script>
+
+
+<!-- Bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
